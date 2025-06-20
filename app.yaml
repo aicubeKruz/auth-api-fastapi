@@ -1,12 +1,14 @@
 runtime: python311
 
 env_variables:
-  SECRET_KEY: "sua-chave-secreta-super-secreta-aqui-123456789"
+  SECRET_KEY: "analytics-clientco-jwt-secret-key-2025-super-forte-aicube-ca"
   ALGORITHM: "HS256"
   ACCESS_TOKEN_EXPIRE_MINUTES: "30"
-  API_KEY: "api-key-super-secreta-123456789"
+  API_KEY: "analytics-clientco-api-key-2025-bramos-aicube-ca-production"
 
 automatic_scaling:
   min_instances: 1
-  max_instances: 10
-  target_cpu_utilization: 0.6
+  max_instances: 5
+  target_cpu_utilization: 0.7
+
+instance_class: F1
