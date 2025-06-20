@@ -1,0 +1,12 @@
+runtime: python311
+
+env_variables:
+  SECRET_KEY: "sua-chave-secreta-super-secreta-aqui-123456789"
+  ALGORITHM: "HS256"
+  ACCESS_TOKEN_EXPIRE_MINUTES: "30"
+  API_KEY: "api-key-super-secreta-123456789"
+
+automatic_scaling:
+  min_instances: 1
+  max_instances: 10
+  target_cpu_utilization: 0.6

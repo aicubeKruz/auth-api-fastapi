@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  auth-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - SECRET_KEY=sua-chave-secreta-super-secreta-aqui-123456789
+      - ALGORITHM=HS256
+      - ACCESS_TOKEN_EXPIRE_MINUTES=30
+      - API_KEY=api-key-super-secreta-123456789
+    volumes:
+      - .:/app
+    restart: unless-stopped
