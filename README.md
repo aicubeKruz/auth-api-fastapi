@@ -1,6 +1,6 @@
-# 🔐 API de Autenticação e Autorização
+# 🔐 NIO API de Autenticação e Autorização
 
-Sistema simples e eficiente para autenticação e autorização de APIs usando **FastAPI** e **JWT tokens**.
+Sistema para autenticação e autorização de APIs usando **FastAPI** e **JWT tokens**.
 
 ## ✨ Funcionalidades
 
